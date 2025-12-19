@@ -1,0 +1,146 @@
+/* IESTATĪJUMI */
+:root {
+    --bg-color: #FCFBF4;    /* Gaiši bēšs */
+    --main-color: #2C5E55;  /* Tumši zaļš */
+    --accent-color: #D68C45;/* Oranžs */
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: 'Montserrat', sans-serif;
+    color: var(--main-color);
+    margin: 0;
+    padding: 0;
+    /* Šīs 3 rindiņas nodrošina, ka footeris būs apakšā */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* 100% no ekrāna augstuma */
+}
+
+/* Pievienoju šo, lai saturs stumtu footeri uz leju */
+.container, .header-section {
+    flex: 1; /* Aizņemu visu brīvo vietu */
+}
+
+/* Footera stils*/
+footer {
+    background-color: #2C5E55;
+    color: #FCFBF4;
+    text-align: center;
+    padding: 20px;
+    width: 100%; /* Lai iet pa visu platumu */
+    box-sizing: border-box; /* Lai padding nemaina platumu */
+    margin-top: auto; /* Stumj footeri uz pašu apakšu */
+}
+
+/* NAVIGĀCIJA */
+nav {
+    background-color: var(--main-color);
+    padding: 25px;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--bg-color); /* Teksts navigācijā ir bēšs */
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+nav a:hover {
+    color: var(--accent-color); /* Pārvēršas oranžs, kad uzbrauc */
+}
+
+/* VIRSRAKSTS */
+.header-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: var(--main-color); /* Zaļš virsraksts */
+}
+
+.intro {
+    font-size: 20px;
+    color: #555; /* Nedaudz pelēkāks apakšvirsraksts, lai nekliedz */
+}
+
+/* KARTIŅU KONTEINERS */
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Atstarpe starp kartiņām */
+    flex-wrap: wrap;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* KARTIŅAS DIZAINS */
+.card {
+    background-color: var(--main-color); /* Zaļais klucis */
+    color: var(--bg-color); /* Bēšs teksts iekšā */
+    padding: 40px 30px;
+    width: 250px;
+    text-align: center;
+    border-radius: 0; /* Kantaini stūri kā Figmā */
+    
+    /* Lai pogas būtu vienā līmenī apakšā */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 200px; 
+}
+
+.card h2 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+/* POGAS */
+.poga {
+    background-color: var(--accent-color); /* Oranžā poga */
+    color: var(--bg-color); /* Bēšs teksts uz pogas */
+    border: none;
+    padding: 15px 30px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.3s; /* Plūstoša krāsu maiņa */
+}
+
+.poga:hover {
+    background-color: #b86e30; /* Tumšāks oranžs, kad uzbrauc */
+    transform: translateY(-2px); /* Poga mazliet palecas uz augšu */
+}
+/* Ierobežojums grafikiem, lai tie neaug bezgalīgi */
+.chart-container {
+    position: relative;
+    height: 200px; /* Fiksēts augstums grafikam */
+    width: 100%;
+}
+.card-img {
+    width: 100%; /* Pa visu platumu */
+    height: 150px; /* Fiksēts augstums */
+    object-fit: cover; /* Bilde netiks izstaipīta */
+    margin-bottom: 15px; /* Atstarpe no virsraksta */
+    border: 2px solid #FCFBF4; /* Gaišs rāmītis */
+}
+
+.card {
+    /* esošie stili */
+    transition: transform 0.3s ease; /* Plūstoša kustība */
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Kartiņa paceļas uz augšu par 10px */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* Ēna kļūst lielāka */
+}

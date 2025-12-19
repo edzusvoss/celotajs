@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <title>Ceļošanas blodziņš</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <a href="about.html">PAR MUMS</a>
+    </nav>
+        <div class="header-section">
+        <h1>Komanda "Ceļotājs"</h1>
+        <p class="intro">Laipni lūgti manā ceļojumu blogā!</p>
+    </div>
+    <div class="container">
+                <div class="card">
+            <img src="Bildes/azoras.jpg" alt="Azoru salas" class="card-img">
+            <h2>Azoru salas</h2>
+            <p>Viss zaļš un neapskādēts (pagaidām).</p>
+                        <p style="font-size: 12px; margin-bottom: 5px; color: #eee;">
+                Datu kopa: <em>klimata_dati_2024.csv</em>. 
+                Līniju grafiks parāda temperatūras izmaiņas gadā. 
+                Redzams, ka Sicīlijā (pelēkā līnija) ir viskarstākās vasaras.
+            </p>
+                        <div class="chart-container">
+                <canvas id="temperaturasGrafiks"></canvas>
+            </div>
+            <a href="https://en.wikipedia.org/wiki/Azores" target="_blank" class="poga">Lasīt vairāk</a>
+        </div>
+        <div class="card">
+            <img src="Bildes/kanarijas.jpg" alt="Kanāriju salas" class="card-img">
+            <h2>Kanāriju salas</h2>
+            <p>D vitamīns visa gada garumā.</p>
+                        <p style="font-size: 12px; margin-bottom: 5px; color: #eee;">
+                Datu kopa: <em>klimata_dati_2024.csv</em>. 
+                Stabiņu diagramma salīdzina nokrišņus. 
+                Kanāriju salās ir gandrīz sauss visu gadu.
+            </p>
+                        <div class="chart-container">
+                <canvas id="budzetaGrafiks"></canvas>
+            </div>
+                        <a href="https://en.wikipedia.org/wiki/Canary_Islands" target="_blank" class="poga">Spied virsū</a>
+        </div>
+
+        <div class="card">
+            <img src="Bildes/sicilija.jpg" alt="Sicīlija" class="card-img">
+            <h2>Sicīlija</h2>
+            <p>Itālija ar īpašu "odziņu" un vulkānu.</p>
+                        <div style="text-align: left; background-color: rgba(255,255,255,0.1); padding: 15px; border-radius: 5px; margin-bottom: 20px;">
+                <h4 style="margin: 0 0 10px 0; color: #FCFBF4;">Jāredz obligāti:</h4>
+                <ul style="margin: 0; padding-left: 20px; color: #eee;">
+                    <li>Vulkāns Etna </li>
+                    <li>Palermo tirgus </li>
+                    <li>Taorminas teātris </li>
+                </ul>
+            </div>
+            <a href="https://en.wikipedia.org/wiki/Sicily" target="_blank" class="poga">Uzzināt info</a>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Komanda "Ceļotājs". Visas tiesības aizsargātas.</p>
+    </footer>
+        <script src="main.js"></script>
+</body>
+</html>
