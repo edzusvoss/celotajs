@@ -6,7 +6,7 @@ const komanda = [
         vecums: 34,
         loma: "Dizainers",
         hobijs: "Ceļošana",
-        foto: "bildes/edzus1.jpg" 
+        foto: "Bildes/edzus1.jpg" 
     },
     {
         // Nav komandas biedru, bet vajadzēja vēl kādu izsaukumu
@@ -14,7 +14,7 @@ const komanda = [
         vecums: 34,
         loma: "Programmētājs",
         hobijs: "Prokrastinēšana",
-        foto: "bildes/edzus2.jpg"
+        foto: "Bildes/edzus2.jpg"
     }
     // Ja vajag vēl kādu tad te var pielikt klāt
 ];
@@ -196,4 +196,5 @@ if (tempCanvas && lietusCanvas) {
             });
         })
         .catch(error => console.error('Kļūda ielādējot CSV:', error));
+
 }
